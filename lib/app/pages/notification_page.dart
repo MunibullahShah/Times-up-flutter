@@ -126,7 +126,7 @@ class _NotificationPageState extends State<NotificationPage> {
                   itemCount: data.length,
                   itemBuilder: (context, index) {
                     return Dismissible(
-                      background: const Card(
+                      background: Card(
                         color: Colors.red,
                         child: Padding(
                           padding: EdgeInsets.symmetric(horizontal: 8),
