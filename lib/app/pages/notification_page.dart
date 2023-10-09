@@ -73,20 +73,20 @@ class _NotificationPageState extends State<NotificationPage> {
           SliverAppBar(
             elevation: 0.5,
             shadowColor: CustomColors.indigoLight,
-            title: JHDisplayText(
+            title: const JHDisplayText(
               text: 'Notifications',
               style: TextStyle(
-                color: CustomColors.indigoDark,
+                color: Colors.indigo,
                 fontWeight: FontWeight.w900,
               ),
             ),
             iconTheme: const IconThemeData(color: Colors.red),
-            backgroundColor: Colors.white,
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             expandedHeight: 50,
             shape: ContinuousRectangleBorder(
               side: BorderSide(
                 color: !value
-                    ? Colors.white
+                    ? Theme.of(context).scaffoldBackgroundColor
                     : CustomColors.indigoLight.withOpacity(0.5),
               ),
             ),
@@ -126,18 +126,18 @@ class _NotificationPageState extends State<NotificationPage> {
                   itemCount: data.length,
                   itemBuilder: (context, index) {
                     return Dismissible(
-                      background: Card(
+                      background: const Card(
                         color: Colors.red,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.delete_forever,
                                 color: Colors.white,
                                 size: 25,
-                              )
+                              ),
                             ],
                           ),
                         ),

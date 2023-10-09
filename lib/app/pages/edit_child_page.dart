@@ -160,7 +160,8 @@ class _EditChildPageState extends State<EditChildPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor:
+          Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
       appBar: AppBar(
         elevation: 2,
         title: JHDisplayText(
@@ -180,7 +181,7 @@ class _EditChildPageState extends State<EditChildPage> {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
       body: _buildContents(),
@@ -242,11 +243,11 @@ class _EditChildPageState extends State<EditChildPage> {
                 ),
                 onPressed: _getLocalImage,
                 child: const JHDisplayText(
-                  text: 'add picture',
+                  text: 'Add picture',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
