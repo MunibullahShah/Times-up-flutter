@@ -11,6 +11,14 @@
 [![Deploy Master](https://github.com/JordyHers/Times-up-flutter/actions/workflows/deploy-master.yml/badge.svg)](https://github.com/JordyHers/Times-up-flutter/actions/workflows/deploy-master.yml)
 [![PR Review](https://github.com/JordyHers/Times-up-flutter/actions/workflows/review.yml/badge.svg)](https://github.com/JordyHers/Times-up-flutter/actions/workflows/review.yml)
 
+
+------------------------------
+<h1 align="center">
+  
+   <a href="https://drive.google.com/file/d/1XaD_DigAl_7SjKK9EzcKBEWNXd2cdakl/view?usp=sharing">⬇️ DOWNLOAD APK ⬇️</a>
+</h1>
+
+------------------------------
 ## NEW FEATURES 🚀 v2.0.0
 
 Time's Up is a mobile application developed using `flutter` to monitor the time kids
